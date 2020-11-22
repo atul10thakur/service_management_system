@@ -15,7 +15,7 @@
   <body>
 
     <nav class="navbar navbar-expand-lg navbar-light text-white bg-danger">
-      <a class="navbar-brand" href="#">OWSM <i class="fab fa-accusoft icon ml-1"></i></a>
+      <a class="navbar-brand" href="#">Hello <i class="fab fa-accusoft icon ml-1"></i></a>
       <a class="nav-link disabled text-white" href="#">Customer Happiness Is Our First Aim</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
