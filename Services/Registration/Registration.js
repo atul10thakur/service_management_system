@@ -1,3 +1,13 @@
+document.getElementById("registration_btn").addEventListener("click",()=>{
+
+window.scrollTo({
+    top: 1300,
+  left: 0,
+  behavior: 'smooth'
+})
+
+})
+
 document.getElementById("sign_up").addEventListener("click", (e)=>{
     e.preventDefault()
   const name =  document.getElementById("reg_name").value
