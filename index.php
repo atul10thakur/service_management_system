@@ -53,7 +53,7 @@
          <p class="font-weight-normal" style="font-size: 5vw;">Welcome to OSMS...</p>
          <p style="font-size: 2vw;">Customer Satisfaction Is Our First Aim</p>
          <div class="btns">
-            <a href="#" class="btn btn-medium bg-success text-white">Login</a>
+            <a href="Services/Login/login.php" class="btn btn-medium bg-success text-white">Login</a>
             <a href="#" class="btn btn-medium bg-danger text-white">Sign Up</a>
          </div>
       </div>

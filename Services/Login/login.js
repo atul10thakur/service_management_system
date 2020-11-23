@@ -21,7 +21,7 @@ else{
             if(login_Obj.status == 200){
                 if(login_Obj.responseText == 1){
                     msg.innerHTML = "";
-                    window.location.href="https://www.google.com";
+                   window.location.href="../../Requester/requester.php";
                 }
                 else{
                     msg.innerHTML = `<div class='btn btn-solid bg-danger text-white mb-2'>${login_Obj.responseText}!!</div>`;
@@ -31,8 +31,8 @@ else{
     }
 
    const data = {
-        email:email ,
-        password:password
+        email:email.trim() ,
+        password:password.trim()
     }
     login_Obj.send(JSON.stringify(data));
 }

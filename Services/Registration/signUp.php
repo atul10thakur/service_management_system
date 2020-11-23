@@ -9,7 +9,7 @@ $data = file_get_contents("php://input");
 
 $Reg_Data = json_decode($data,true);
 
-$name = $Reg_Data['name'];
+$name =  $Reg_Data['name'];
 $email = $Reg_Data['email'];
 $password = $Reg_Data['password'];
 

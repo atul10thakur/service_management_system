@@ -1,6 +1,7 @@
 <?php
 
 // include("../../database/db.php") ;
+session_start();
 
 $con = mysqli_connect("localhost","root","","newoswm");
 
@@ -12,13 +13,18 @@ $email = $data['email'];
 $password = $data['password'];
 
 
-$sql= "select Email, Password from registration where Email = '$email' and Password = '$password' ";
+$sql= "select Email,Password,id from registration where Email = '$email' and Password = '$password' ";
+
 
 $run = mysqli_query($con,$sql);
 
-if(mysqli_fetch_row($run)){
+$query = mysqli_fetch_row($run);
+
+$_SESSION['id'] = $query[2];
+
+if($query){
     
-    echo 1;
+    echo true;
 } 
 else{
     echo "Password or Email is not correct";

@@ -41,9 +41,9 @@ Obj.onload = ()=>{
 }
 
 const Reg_data = {
-    name:name ,
-    email: email,
-    password:password
+    name:name.trim() ,
+    email: email.trim(),
+    password:password.trim()
 }
 
  Obj.send(JSON.stringify(Reg_data));
