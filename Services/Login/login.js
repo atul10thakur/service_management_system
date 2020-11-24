@@ -10,9 +10,9 @@ if(email=="" || password==""){
 }
 else{
 
-   const login_Obj = new XMLHttpRequest();
+   const login_Obj = new XMLHttpRequest();       
 
-    login_Obj.open("POST" , "checkUser.php" , "true");
+    login_Obj.open("POST" , "checkUser.php" , "true");   //...........Sending Request To user ...................... 
 
     login_Obj.responseType = "text";
 
@@ -21,7 +21,7 @@ else{
             if(login_Obj.status == 200){
                 if(login_Obj.responseText == 1){
                     msg.innerHTML = "";
-                   window.location.href="../../Requester/requester.php";
+                   window.location.href="../../Requester/requester.php";  // ...........If User Is Loged In Successfull            
                 }
                 else{
                     msg.innerHTML = `<div class='btn btn-solid bg-danger text-white mb-2'>${login_Obj.responseText}!!</div>`;

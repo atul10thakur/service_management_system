@@ -1,6 +1,5 @@
 <?php
 ?>
-
 <div class="col-lg-8" >
       <form method="POST" class="ml-5"> 
        <input type="text" class="form-control " placeholder="Name"/> <br>

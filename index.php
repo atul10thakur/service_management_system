@@ -14,6 +14,10 @@
   </head>
   <body>
 
+     
+<!-- ................NavBar Starting .............. -->
+
+
     <nav class="navbar navbar-expand-lg navbar-light text-white bg-danger">
       <a class="navbar-brand" href="#">OSWM <i class="fab fa-accusoft icon ml-1"></i></a>
       <a class="nav-link disabled text-white" href="#">Customer Happiness Is Our First Aim</a>
@@ -29,26 +33,17 @@
         
       </div>
     </nav>
-<!-- <nav class="navbar navbar-expand-md navbar-dark bg-danger pb-3 pt-3 mb-0">
-     <a class="navbar-brand" href="#">OSMS<i class="fab fa-accusoft icon ml-1"></i></a>
-     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-          <a class="nav-link disabled" href="#">Customer Happiness Is Our First Aim</a>
-          <a class="nav-link active ml-5" href="#">Home <span class="sr-only">(current)</span></a>
-        <a class="nav-link active" href="#">Services</a>
-        <a class="nav-link active" href="#">Registration</a>
-        <a class="nav-link active" href="#">Login</a>
-        <a class="nav-link active" href="#">Contact</a>
-      </div>
-    </div>
-  </nav> -->
+
+
+<!-- ................NavBar End .............. -->
+
+
+
+<!-- .................. top 1st secton with login and signUp btn ................  -->
 
 
   <section class="img">
-<!-- top secton ....  -->
+
     <div class="text-white first" >
          <p class="font-weight-normal" style="font-size: 5vw;">Welcome to OSMS...</p>
          <p style="font-size: 2vw;">Customer Satisfaction Is Our First Aim</p>
@@ -58,9 +53,14 @@
          </div>
       </div>
   </section>
-  
 
-<!-- middle section ............ -->
+  
+<!-- .................. top 1st secton End ................  -->
+
+
+
+<!-- ..................  2nd section jumbotron ................  -->
+
 
 <section>
   <div class="second container mt-5">
@@ -75,6 +75,14 @@
      </p>
   </div>  
   </div>
+
+
+<!-- .................. End of Jumbotron ................  -->
+
+
+
+<!-- .................. Services Section With Icons ................  -->
+
 
   <section class="third container text-center pb-0"  >
     <div class="jumbotron bg-white pb-0">
@@ -100,8 +108,12 @@
 </section>
 
 
+<!-- .................. End of service section ................  -->
 
-<!-- ................User Registration .................. -->
+
+
+<!-- ................Create Account For user Section .................. -->
+
 
 <?php
 
@@ -109,7 +121,13 @@ include("Services/Registration/UserRegistration.php") ;
 
 ?>
 
-<!-- happy customers .......sections ........... -->
+
+<!-- .................. And End Of user Section ................  -->
+
+
+
+<!-- ..................Happy Customers Sections ........... -->
+
 
 <section class=" fifth container-fluid bg-danger mt-5 pt-5 pb-5" >
   <h2 class="text-center text-white pb-5">Happy Customers</h2>
@@ -158,20 +176,35 @@ include("Services/Registration/UserRegistration.php") ;
 </section>
 
 
-<!-- ............ footer ........ -->
+<!-- .................. End OF Happy Customers  ................  -->
 
 
+
+<!-- ............ footer  Section With Contact Us Form And Address ........ -->
 
 
 <div class="sixth mt-5 container"> 
   <h1 class="text-center"> Contact US</h1>
+
+
+
   <div class="row justify-content-center">
+  
+  <!-- .................. Form Section................  -->
+
     <?php
     include ("Services/Contact/ContactForm.php");
     ?>
 
-    <div class="address">
 
+  <!-- .................. Form Section End................  -->
+
+
+
+  <!-- .................. Address ................  -->
+
+
+    <div class="address">
          <div class="head">
           <h4>Headquter</h4>
 
@@ -196,10 +229,16 @@ include("Services/Registration/UserRegistration.php") ;
           </p>
          </div>
     </div>
-
   </div> 
-
 </div>
+
+
+<!-- ................ Address Section End ............... -->
+
+
+
+<!--..................................... End OF The Page .............................................. -->
+
 
 
  <!-- Optional JavaScript; choose one of the two! -->
@@ -213,6 +252,8 @@ include("Services/Registration/UserRegistration.php") ;
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
     -->
+
+    
 <script src="Services/Contact/Contact.js"></script>
 <script src="Services/Registration/Registration.js"></script>
 
