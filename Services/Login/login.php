@@ -1,3 +1,5 @@
+<!-- .............................Add Effects And Also add Navbar.................... -->
+  
 <?php
 ?>
 <!doctype html>
@@ -13,8 +15,14 @@
     <title>Hello, world!</title>
   </head>
   <body>
+
+
   <h2 class="text-center mt-5">Welcome to The Services Management System</h2>
-<h4 class="text-center">Please Login</h4>
+<h4 class="text-center mb-5">Please Login</h4>
+
+
+<!-- ...................Starting Of Form ................-->
+
 
 <div class="offset-md-3 offset-2 col-lg-6 col-7 shadow-lg pt-3 pr-4 pl-4 pb-3">
 <form method="POST">
@@ -31,6 +39,11 @@
 </form>
 <span id="login_msg"></span>
 </div>
+
+
+<!-- ...................Ending Of Form ................-->
+
+
 
     <!-- Optional JavaScript; choose one of the two! -->
 

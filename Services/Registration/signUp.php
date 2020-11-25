@@ -1,21 +1,22 @@
 
 <?php
+ // ......................................More Validation has to be Done .................
 
-// include("../../database/db.php");
-
-$con = mysqli_connect("localhost","root","","newoswm");
+$con = mysqli_connect("localhost","root","","newoswm"); 
 
 $data = file_get_contents("php://input");
 
 $Reg_Data = json_decode($data,true);
 
-$name =  $Reg_Data['name'];
+// .........................After  Getting Data  Name , Email , Password  ......................
+
+$name =  $Reg_Data['name'];             
 $email = $Reg_Data['email'];
 $password = $Reg_Data['password'];
 
-if($name!="" && $email!="" && $password!=""){
+if($name!="" && $email!="" && $password!=""){       // .............. If User Entered Empty String ................
 
-    if(strlen($name) <=4 || strlen($email)<=4 || strlen($password) <= 4)
+    if(strlen($name) <=4 || strlen($email)<=4 || strlen($password) <= 4)     // ......... Basic  Validation .................
     {
         echo "all field must be more than 4 letters "; 
     }

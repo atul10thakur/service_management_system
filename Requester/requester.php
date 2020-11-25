@@ -1,3 +1,5 @@
+<!-- ......................................Want TO make UPdate Query And some responsive design and add some Effects .......... -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,25 +20,41 @@ include('../database/db.php');
 if(isset($_SESSION['id'])){
 
     $id = $_SESSION['id'];
-    //for displaying name and  Email ID  ........
 
-  $sql = "select Name, Email from registration where id ='$id'" ;
+
+    //........................for displaying name and  Email ID  ........
+
+  $sql = "select Name, Email from registration where id ='$id'" ;  // ............fectching data from data to show in profile ..............
 
   $run =mysqli_query($con, $sql);
   $data = mysqli_fetch_row($run);
 
   if($data){
-      $Name = $data[0];      // .........Name ...........
-      $Email = $data[1];      // .........Email .........
+      $Name = $data[0];      // ......................Name ...........
+      $Email = $data[1];      // .................Email .........
   }
     ?>
 
-         <!--    -->
+         <!--   ....................... End Of The Fetching ....................... -->
+
+
+<!-- ..............TOP BAR ...................... -->
+
 <h1 class="bg-danger p-2 text-white">       
 OSWM
 <i class="fab fa-accusoft icon ml-1 text-dark"></i>
 </h1>
+
+
+<!-- ......................... Side Bar And Main Content ....................-->
+
+
 <div class="row container-fluid">
+
+
+<!-- .......................Side Bar ............................. -->
+
+
   <div class="sidebar p-2 ">
     <h5 class="bg-danger p-2"><i class="fas fa-user mr-2"></i>Profile</h5>
     <h5 class="bg-danger p-2"><i class="fas fa-anchor mr-2"></i>Submit Request</h5>
@@ -44,7 +62,21 @@ OSWM
     <h5 class="bg-danger p-2"><i class="fas fa-unlock-alt mr-2"></i>Change Password</h5>
     <h5 class="bg-danger p-2"><i class="fas fa-sign-out-alt mr-2"></i>Logout</h5>
   </div>
+
+
+<!-- .......................Side Bar End ............................. -->
+
+
+
+<!-- .......................Side Content ............................. -->
+
+
   <div class="content col-8">
+
+
+  <!-- .......................Profile Page ............................. -->
+
+
   <div class="profile">
   <form id="req_Form">
   <div class="form-group">
@@ -60,9 +92,25 @@ OSWM
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
   </div>
+
+
+  <!-- .......................End OF Profile Page ............................. -->
+
+
   </div>
+
+
+  <!-- .......................Side Content End ............................. -->
+
+
 </div>
  
+
+<!-- ....................... End Of Side Bar And Main Content............................. -->
+
+
+
+<!-- .......................IF User Entered Url Directly  Then Redirect TO  Home............................. -->
 
    <?php 
 }
@@ -71,6 +119,7 @@ else{
 }
 
     ?>
+
 
  <!-- Optional JavaScript; choose one of the two! -->
 

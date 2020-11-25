@@ -1,10 +1,10 @@
+// ......................................Do Some VAlidation  .................
+
 <?php
 
-// include("../../database/db.php") ;
 session_start();
 
 $con = mysqli_connect("localhost","root","","newoswm");
-
 
 $input = file_get_contents("php://input");
 $data = json_decode($input,true);  

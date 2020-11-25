@@ -1,3 +1,4 @@
+// ...........................Effects Eill Be Addded And Validation  ........................................
 
 
 document.getElementById("login").addEventListener("click",(e)=>{
@@ -6,7 +7,7 @@ const email = document.getElementById("login_email").value;
 const password = document.getElementById("login_password").value;
 const msg = document.getElementById("login_msg")
 if(email=="" || password==""){
-  msg.innerHTML = "<div class='btn btn-solid bg-danger text-white mb-2'>Please Fill all the fields</div>"
+  msg.innerHTML = "<div class='btn btn-solid bg-danger text-white mb-2'>Please Fill all the fields</div>"  // .......if user give empty values ..........
 }
 else{
 
@@ -37,3 +38,11 @@ else{
     login_Obj.send(JSON.stringify(data));
 }
 })
+
+
+// ............ Fading effects in the form..........
+
+window.onload = () =>{
+console.log("hello ....");
+}
+

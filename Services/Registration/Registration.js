@@ -1,12 +1,19 @@
+// ......................................More Validation has to be Done .................
+// ......................................Also Give Some Effects On the Form .................
+
 document.getElementById("registration_btn").addEventListener("click",()=>{
 
-window.scrollTo({
+window.scrollTo({               // ........... Smoothning  And Sliding Effect When User Clicks On Registration ............... 
     top: 1300,
   left: 0,
   behavior: 'smooth'
 })
 
 })
+
+
+//.................................. Submitting Form And Creating User .............................
+
 
 document.getElementById("sign_up").addEventListener("click", (e)=>{
     e.preventDefault()
@@ -26,11 +33,15 @@ Obj.onload = ()=>{
 
     if(Obj.status === 200){
     
+      // ..............If User Successfully Created Account .............
      
-        if(Obj.responseText == 1){
+        if(Obj.responseText == 1){      
             document.getElementById("reg_msg").innerHTML = "<div class = 'bg-info btn btn-md btn-block text-white'>Account Created Successfully , Now You can login</div>"
            document.getElementById("reg_form").reset();
         }
+
+        // ............................. If User Gets Error ...............
+
         else{
             document.getElementById("reg_msg").innerHTML = `<div class='btn btn-block bg-info text-white btn-lg'>
             ${Obj.responseText} !!!

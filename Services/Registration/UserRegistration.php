@@ -1,5 +1,9 @@
 <?php
 ?>
+
+<!-- ........................User Registration Form ....................... -->
+
+
 <section class="fourth container">
   <h1 class="text-center">Create Account</h1>
  <div class="row offset-md-2 offset-1 offset-lg-3 shadow-lg p-4 " style="width: 500px;">
